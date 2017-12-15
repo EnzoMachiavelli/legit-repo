@@ -1,12 +1,11 @@
 automacro GetHPRecoveryItem {
 	exclusive 1
 	overrideAI 1
-	JobID 7
+	JobID 7, 14
 	BaseLevel >= 35 
 	JobLevel == 10 # Changeto whenever you want it to start getting the skill
 	SkillLevel SM_MOVINGRECOVERY == 0
 	exclusive 1
-	macro_delay 2
 	call {
 		[
 			do iconf 713 0 0 0
@@ -57,7 +56,7 @@ automacro GetHPRecoveryItem {
 automacro EmptyBottle {
 	exclusive 1
 	overrideAI 1
-	JobID 7
+	JobID 7, 14
 	BaseLevel >= 35
 	JobLevel == 10 # Changeto whenever you want it to start getting the skill
 	InInventory "Empty Bottle" >= 200
@@ -73,7 +72,7 @@ automacro EmptyBottle {
 automacro MothWings {
 	exclusive 1
 	overrideAI 1
-	JobID 7
+	JobID 7, 14
 	BaseLevel >= 35
 	JobLevel == 10 # Changeto whenever you want it to start getting the skill
 	InInventory "Moth Wings" >= 1
@@ -89,7 +88,7 @@ automacro MothWings {
 automacro MovingHPRecovery {
 	exclusive 1
 	overrideAI 1
-	JobID 7
+	JobID 7, 14
 	BaseLevel >= 35
 	JobLevel == 10 # Changeto whenever you want it to start getting the skill
 	InInventory "Empty Bottle" >= 200
@@ -106,7 +105,7 @@ automacro MovingHPRecovery {
 automacro MovingHPRecovery2 {
 	exclusive 1
 	overrideAI 1
-	JobID 7
+	JobID 7, 14
 	BaseLevel >= 35
 	JobLevel == 10 # Changeto whenever you want it to start getting the skill
 	InMap izlude_in
